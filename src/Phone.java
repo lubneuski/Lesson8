@@ -33,7 +33,7 @@ public class Phone {private int number; private String model; private int weight
     }
     public void receiveCall(String name){
         this.name = name;
-        System.out.println("Звонит " +getName()+" +375 "+getNumber());
+        System.out.println("Звонит " +getName());
     }
     public void receiveCall(String name, int number){
         this.name = name;
@@ -41,7 +41,6 @@ public class Phone {private int number; private String model; private int weight
         System.out.println("Звонит " +getName()+" +375 "+getNumber());
     }
     public static void sendMessage(int...number){
-        for (int i=0; i< number.length;i++)
-        System.out.println("+375 "+number[i]+" Здесь могло быть Ваше сообщение");
+        for (int j : number) System.out.println("+375 " + j + " Здесь могло быть Ваше сообщение");
     }
 }
